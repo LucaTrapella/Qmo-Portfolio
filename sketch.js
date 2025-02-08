@@ -5,7 +5,7 @@ let margin = 10, maxPoints;
 let quadtree, boundary, capacity = 10;
 
 function setup() {
-  createCanvas(windowWidth, windowHeight).mousePressed(startAnimation);
+  createCanvas(windowWidth-1, windowHeight-1).mousePressed(startAnimation);
   startAnimation();
 }
 

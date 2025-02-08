@@ -26,7 +26,7 @@ canvas {
     margin-top: 1px; /* Aggiusta la posizione verticale */
     width: 100%; /* Rende il canvas responsivo alla larghezza della finestra */
     opacity: 1;
-    max-width: 90vw;
+    max-width: 98vw;
 }
 
 /* Freccia di scroll */
