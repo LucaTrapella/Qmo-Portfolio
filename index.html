@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qmo</title>
+
+    <!-- Librerie p5.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/addons/p5.sound.min.js"></script>
+
+    <!-- Collegamento CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="top-left-text">
+        <p class="contact-info">
+             <strong>:::: QMO</strong> <br>
+            :: qemmeo@gmail.com <br>
+            <a href="https://www.instagram.com/lucatrapellaa/" target="_blank">:: Instagram</a> <br>
+            <a href="https://soundcloud.com/qmo-383212272?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">:: Soundcloud</a> <br>
+            <a href="https://bandcamp.com/trappoz" target="_blank">:: Bandcamp</a>
+        </p>
+    </div>
+    
+    <main>
+        <!-- Freccia per lo scroll -->
+        <div class="scroll-arrow" id="scrollArrow" onclick="scrollToBottom()">⌄</div>
+    </main>
+
+    <!-- Canvas per p5.js -->
+    <div id="canvas-container"></div>
+
+    <!-- Collegamento ai file JavaScript per p5 -->
+    <script src="sketch.js"></script>
+    <script src="node.js"></script>
+    <script src="quadtree.js"></script>
+
+    <!-- Funzione freccia scroll -->
+    <script>
+        function scrollToBottom() {
+            window.scrollTo({ top: window.innerHeight, behavior: 'smooth' });
+        }
+
+        function toggleArrowVisibility() {
+            const scrollArrow = document.getElementById('scrollArrow');
+            if (window.innerHeight + window.scrollY >= window.innerHeight+10) {
+                scrollArrow.style.opacity = '0'; // Nasconde la freccia
+            } else {
+                scrollArrow.style.opacity = '0.5'; // Mostra la freccia
+            }
+        }
+
+        window.addEventListener('scroll', toggleArrowVisibility);
+    </script>
+
+    
+    <div class="separator">
+        <p>:::</p>
+    </div>
+
+    <!-- Latest works -->
+    <div class="works">
+        <h2>Stuff I've done</h2>
+    </div>
+
+    <div id="works-container"></div>
+    <script src="workscript.js"></script>
+
+    <div id="credits">
+        <p> :: Created by <strong> Luca Trapella</strong></p>
+    </div>
+
+
+    
+
+    
+</body>
+</html>

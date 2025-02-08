@@ -1,0 +1,389 @@
+
+
+/* Impostazioni generali del body */
+body {
+    margin: 0; /* Rimuove il margine predefinito del browser */
+    padding: 0; /* Rimuove il padding predefinito */
+    width: 100%; /* Assicura che il body occupi tutta la larghezza della finestra */
+    height: 200vh; /* Imposta l'altezza al doppio dell'altezza della finestra per abilitare lo scroll */
+    background: #f0f0f0; /* Imposta uno sfondo grigio chiaro */
+    display: flex; /* Usa il layout flexbox */
+    flex-direction: column; /* Imposta gli elementi figli in colonna */
+    align-items: center; /* Centra gli elementi figli orizzontalmente */
+    font-family: 'Cascadia Code', monospace;; /* Imposta un font più generico */
+    box-sizing: border-box; /* Assicura che il padding e il margine siano inclusi nelle dimensioni */
+}
+
+#credits {
+    font-size: 1.3vh;
+    color: rgb(135, 135, 135);
+}
+
+
+/* Canvas */
+canvas {
+    display: block; /* Rimuove gli spazi extra sotto il canvas */
+    margin-top: 1px; /* Aggiusta la posizione verticale */
+    width: 100%; /* Rende il canvas responsivo alla larghezza della finestra */
+    opacity: 1;
+}
+
+/* Freccia di scroll */
+.scroll-arrow {
+    position: fixed;
+    bottom: 5%; /* Posiziona la freccia un po' sopra il fondo */
+    left: 50%; /* La centra orizzontalmente */
+    transform: translateX(-50%);
+    font-size: 5vh; /* Usa dimensioni relative per la grandezza */
+    color: #373737;
+    opacity: 0.5;
+    cursor: pointer;
+    animation: bounce 1.5s infinite;
+}
+
+/* Animazione della freccia */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        transform: translateX(-50%) translateY(10px);
+    }
+}
+
+.separator {
+    font-size: 5vh; /* Grandezza relativa al viewport */
+    text-align: center;
+    margin-top: 5vh; /* Imposta margine in percentuale della finestra */
+    color: 20;
+}
+
+/* Stile per i link */
+.social-link {
+    text-decoration: none; /* Rimuove la sottolineatura del link */
+    font-size: 1.5em; /* Imposta la dimensione del testo */
+    margin: 0 5vw; /* Distanza tra i link */
+    color: inherit; /* Usa il colore ereditato dal contesto */
+    transition: transform 0.3s ease;
+}
+
+/* Stile per il testo in corsivo */
+.social-link i {
+    font-style: normal; /* Rende il testo in corsivo */
+    color: 20;
+}
+
+/* Hover effect per il testo */
+.social-link:hover i {
+    transform: scale(1.1);
+}
+
+/* Stile per la sezione "works" */
+.works {
+    font-size: 4vmin;
+    text-align: center;
+    margin-top: 3vh;
+    color: 20;
+}
+
+
+
+/* Stile per il testo in alto a sinistra */
+.contact-info {
+    font-size: 6vmin;
+    line-height: 6vmin;
+    color: #212121;
+    margin-top: 0;
+    margin-left: 2vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+}
+
+/* Stile per il link */
+.contact-info a {
+    text-decoration: none;
+    color: inherit; /* Fa sì che il link prenda il colore del testo circostante */
+    transition: color 0.3s ease, transform 0.3s ease;
+    
+
+}
+
+/* Animazione hover per ogni link con colori diversi */
+.contact-info a:hover {
+    transform: scale(1.1); /* Aumenta leggermente la dimensione */
+    font-weight: 550; /* Aumenta lo spessore del font */
+
+}
+/* Colore specifico per ciascun link al passaggio del mouse */
+.contact-info a:nth-of-type(1):hover {
+    
+    color: #45124e; /* Colore per Instagram */
+}
+
+.contact-info a:nth-of-type(2):hover {
+    color: #802d14; /* Colore per SoundCloud */
+}
+
+.contact-info a:nth-of-type(3):hover {
+    color: #01354e; /* Colore per Bandcamp */
+}
+
+
+
+
+
+
+
+
+
+
+/* Contenitore principale dei lavori */
+#works-container {
+    display: flex;
+    flex-direction: column; /* Mette gli elementi uno sotto l'altro */
+    align-items: center; /* Li centra orizzontalmente */
+    gap: 20px;
+}
+
+/* Singolo elemento work */
+.work-item {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    position: relative;
+    max-width: 80vw;
+    max-height: 100vh;
+    width: 100%;
+    background: f0f0f0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+
+
+/* Titolo */
+.work-title {
+    font-size: 2vmax;
+    font-weight: bold;
+    color: #333;
+    top: 5px;
+    margin: 0;
+}
+
+/* Data e pubblicazione */
+.work-date {
+    color: #666;
+    display: block;
+    font-size: vmax;
+
+}
+
+/* Categoria */
+.work-category {
+    font-weight: bold;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Descrizione */
+.work-description {
+    font-style: italic;
+    color: #777;
+}
+
+
+.work-duration {
+    color: gray;
+    font-weight: bold;
+}
+
+
+/* Immagine */
+.work-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+
+.work-publisher,
+.work-duration,
+.work-link {
+    color: #666;
+    margin-top:2vh;
+}
+
+/* Link per ascoltare */
+.work-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.work-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Carosello per immagini */
+.work-gallery img {
+    width: 80px;
+    height: auto;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+/* Audio nascosto */
+.audio-hidden {
+    display: none;
+}
+
+/* Immagine a sinistra */
+.work-img-wrapper {
+    flex-shrink: 0;
+    width: 20vw;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Immagine */
+.work-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.work-img-wrapper:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* Contenitore del testo a destra */
+.work-text-container {
+    padding-left: 2vw;
+    width: 50vmax;
+    height: 100%; /* Adatta l'altezza a quella del contenitore padre */
+    display: flex;
+    flex-direction: column;
+    font-size: 2vmin; /* Imposta la dimensione del testo in modo dinamico */
+    justify-content: center; /* Centra il contenuto verticalmente */
+    overflow: hidden; /* Nasconde il testo che esce */
+    text-overflow: ellipsis; /* Mostra i "..." se il testo è troppo lungo */
+    white-space: normal; /* Permette al testo di andare a capo */
+}
+
+
+/* Categoria in alto a destra */
+.work-info {
+    position: absolute;
+    top: 1vh;
+    right: 10px;
+    text-align: right;
+}
+
+
+/* Audio */
+.audio-container {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: column; /* Imposta gli elementi in colonna */
+    justify-content: center;
+    align-items: center; /* Centra gli elementi */
+    gap: 5px; /* Spazio tra gli elementi */
+    background: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.play-pause-btn {
+    background: none;
+    border: none;
+    color: white;
+    width: 90%;
+    font-size: min(5vw, 5vh); /* Adatta la grandezza del testo */
+    cursor: pointer;
+    white-space: nowrap; /* Evita che il testo vada a capo */
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+    width: 100%;
+}
+
+.progress-bar {
+    width: 80%;
+    appearance: none; /* Rimuove lo stile di default */
+    background: rgb(219, 219, 219); /* Colore della barra */
+    height: 3px;
+    cursor: pointer;
+    margin-top: 3vh;
+    border-radius: 5px; /* Smussa gli angoli della barra */
+}
+
+/* Personalizzazione del pallino per Chrome, Safari, Edge */
+.progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    width: 2vmin;
+    height: 2vmin;
+    background: gray; /* Cambia colore */
+    border-radius: 50%; /* Lo rende circolare */
+    border: 2px solid #f0f0f0; /* Bordo bianco per contrasto */
+    cursor: pointer;
+}
+
+/* Personalizzazione per Firefox */
+.progress-bar::-moz-range-thumb {
+    width: 2vmin;
+    height: 2vmin;
+    background: gray;
+    border-radius: 50%;
+    border: 2px solid #f0f0f0;
+    cursor: pointer;
+}
+
+/* Personalizzazione per Internet Explorer (opzionale) */
+.progress-bar::-ms-thumb {
+    width: 2vmin;
+    height: 2vmin;
+    background: gray;
+    border-radius: 50%;
+    border: 2px solid #f0f0f0;
+    cursor: pointer;
+}
+
+
+.time-label {
+    color: gray;
+    margin-top: 1vh;
+}
+
+/* Mostra gli elementi al passaggio del mouse */
+.work-img-wrapper:hover .audio-container,
+.work-img-wrapper:hover .play-pause-btn {
+    opacity: 1;
+}
