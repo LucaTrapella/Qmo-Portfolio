@@ -47,7 +47,7 @@ function draw() {
     let n1 = nodes[i].position;
     let n2 = nodes[(i + 1) % nodes.length].position;
     stroke(40); 
-    strokeWeight(1.2);
+    strokeWeight(1.5);
     line(n1.x, n1.y, n2.x, n2.y);
   }
 

@@ -10,7 +10,7 @@ body {
     display: flex; /* Usa il layout flexbox */
     flex-direction: column; /* Imposta gli elementi figli in colonna */
     align-items: center; /* Centra gli elementi figli orizzontalmente */
-    font-family: 'Cascadia Code', monospace;; /* Imposta un font più generico */
+    font-family: Andale Mono, monospace; /* Imposta un font più generico */
     box-sizing: border-box; /* Assicura che il padding e il margine siano inclusi nelle dimensioni */
 }
 
