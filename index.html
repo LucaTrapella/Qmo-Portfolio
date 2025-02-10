@@ -85,7 +85,7 @@
         elements.forEach(el => {
             let positionFromTop = el.getBoundingClientRect().top;
 
-            if (positionFromTop - windowHeight < 0) {
+            if (positionFromTop - windowHeight+100 < 0) {
                 el.classList.add("show");
             }
         });
