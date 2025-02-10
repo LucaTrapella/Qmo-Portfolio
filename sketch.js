@@ -13,10 +13,10 @@ function startAnimation() {
   r = ((width+height)/2)/8;
   nodes = [];
   rand = int(random(9, 13));
-  print("random:"+ rand)
+  //print("random:"+ rand)
   num = rand;
   insertDistance = int(random(rand, rand + 2));
-  print("insertDistance:" + insertDistance)
+  //print("insertDistance:" + insertDistance)
   separationDistance = insertDistance * 2;
   maxPoints = 1700;
 

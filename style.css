@@ -15,7 +15,7 @@ body {
 }
 
 #credits {
-    font-size: 1.3vh;
+    font-size: 1.3vmin;
     color: rgb(135, 135, 135);
 }
 
@@ -55,8 +55,10 @@ canvas {
 .separator {
     font-size: 5vh; /* Grandezza relativa al viewport */
     text-align: center;
-    margin-top: 5vh; /* Imposta margine in percentuale della finestra */
     color: 20;
+    position: relative;
+    margin-top: 5vh; /* Imposta margine in percentuale della finestra */
+
 }
 
 /* Stile per i link */
@@ -95,12 +97,11 @@ canvas {
     font-size: 6vmin;
     line-height: 6vmin;
     color: #212121;
-    margin-top: 0;
+    margin-top: 2vw;
     margin-left: 2vw;
     position: absolute;
     top: 0;
     left: 0;
-    padding: 10px;
 }
 
 /* Stile per il link */
@@ -388,4 +389,21 @@ canvas {
 .work-img-wrapper:hover .audio-container,
 .work-img-wrapper:hover .play-pause-btn {
     opacity: 1;
+}
+
+
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* nascondo il "loading... di p5 */
+#p5_loading {
+    display: none !important;
 }
