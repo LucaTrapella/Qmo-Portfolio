@@ -339,10 +339,10 @@ canvas {
 }
 
 .progress-bar {
-    width: 80%;
+    width: 99%;
     appearance: none; /* Rimuove lo stile di default */
     background: rgb(219, 219, 219); /* Colore della barra */
-    height: 3px;
+    height: 1vmin;
     cursor: pointer;
     margin-top: 3vh;
     border-radius: 5px; /* Smussa gli angoli della barra */
