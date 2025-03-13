@@ -175,6 +175,7 @@ class Work {
 
 // Creazione oggetti 
 const works = [
+    new Work("Lapse /w frHans",0,"Onde Coerenti", "13.03.2025", "DJ Set", "works_images/lapse.jpg", "https://soundcloud.com/luca-trapella-651200896/lapse-frhans-qmo?si=b4c76294f4d14262b886bb23a1911140&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing","works_audio/lapse.mp3", 0, "03:02",0),
     new Work("Soné (6 ed.)","Spazio Hydro, Biella",0, "1.02.2025", "serata", "works_images/sone.jpg", 0, 0,0,0,"https://www.instagram.com/p/DFYNM0CNfjh/?utm_source=ig_web_copy_link"),
     new Work("Opening for: Olmo Amato - Deep Blue","Bi-BOx Art Space, Biella",0, "20.09.2024", "serata", "https://i1.sndcdn.com/artworks-Rdt1nexJWYS5Vney-Rr6Tug-t1080x1080.jpg", 0, 0,0,0,"https://www.instagram.com/p/DB1pE27pe0P/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="),
     new Work("Esplorazioni Sonore #2 (Porquerolles)",0,"Onde Coerenti", "29.08.2024", "DJ Set", "works_images/es2.jpeg", "https://soundcloud.com/luca-trapella-651200896/esplorazioni-sonore-2?si=b3ed1330cf5648b6af3022d9b751eb76&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing","works_audio/es2.mp3", "A cave on the island of Porquerolles inspired the second Exploration. The mix dives into the cavity and then resurfaces at sunset. Unlike the first one, this journey crosses different genres, with the tracks accompanied by field recordings from the island.", "1:00:00",0),
