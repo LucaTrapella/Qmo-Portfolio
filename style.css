@@ -169,10 +169,11 @@ canvas {
 /* Titolo */
 .work-title {
     font-size: 2vmax;
-    font-weight: bold;
+    /*font-weight: bold; */
     color: #333;
     top: 5px;
-    margin: 0;
+    margin-top: 1vmax;
+    margin-bottom: 0;
 }
 
 /* Data e pubblicazione */
@@ -215,11 +216,18 @@ canvas {
 }
 
 
-.work-publisher,
-.work-duration,
+.work-publisher{
+    color: #666;
+    margin-top: 1vh;
+}
+
+.work-duration{
+    color: #666;
+    margin-top: 0px;
+}
 .work-link {
     color: #666;
-    margin-top:2vh;
+    margin-top:2vmax;
 }
 
 /* Link per ascoltare */
@@ -344,8 +352,9 @@ canvas {
     background: rgb(219, 219, 219); /* Colore della barra */
     height: 1vmin;
     cursor: pointer;
-    margin-top: 3vh;
     border-radius: 5px; /* Smussa gli angoli della barra */
+    margin: 0px;
+    margin-top: 2vh;
 }
 
 /* Personalizzazione del pallino per Chrome, Safari, Edge */
@@ -377,12 +386,13 @@ canvas {
     border-radius: 50%;
     border: 2px solid #f0f0f0;
     cursor: pointer;
+    margin-top: 2vh;
 }
 
 
 .time-label {
     color: gray;
-    margin-top: 1vh;
+    margin-top: 0.2vh;
 }
 
 /* Mostra gli elementi al passaggio del mouse */
