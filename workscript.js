@@ -65,7 +65,7 @@ class Work {
 
         if (this.where) {
             const whereEl = document.createElement("w");
-            whereEl.textContent = `Music event at: ${this.where}`;
+            whereEl.textContent = `Djset at: ${this.where}`;
             whereEl.classList.add("work-publisher");
             textContainer.append(whereEl)
 
