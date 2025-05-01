@@ -195,8 +195,9 @@ canvas {
 
 /* Descrizione */
 .work-description {
-    font-style: italic;
+    /*font-style: italic; */
     color: #777;
+    line-height: 1.3; /* Aggiunge più spazio tra le righe */
 }
 
 
@@ -223,7 +224,7 @@ canvas {
 
 .work-duration{
     color: #666;
-    margin-top: 0px;
+    
 }
 .work-link {
     color: #666;
@@ -392,7 +393,7 @@ canvas {
 
 .time-label {
     color: gray;
-    margin-top: 0.2vh;
+    margin-top: 2vmin;
 }
 
 /* Mostra gli elementi al passaggio del mouse */
