@@ -15,7 +15,7 @@ body {
 }
 
 #credits {
-    font-size: 1.3vmin;
+    font-size: 0.5rem; 
     color: rgb(135, 135, 135);
 }
 
@@ -53,7 +53,7 @@ canvas {
 }
 
 .separator {
-    font-size: 5vh; /* Grandezza relativa al viewport */
+    font-size: 3rem; /* Grandezza relativa al viewport */
     text-align: center;
     color: 20;
     position: relative;
@@ -83,7 +83,7 @@ canvas {
 
 /* Stile per la sezione "works" */
 .works {
-    font-size: 4vmin;
+    font-size: 3rem;
     text-align: center;
     margin-top: 3vh;
     margin-bottom: 2vh;
@@ -94,8 +94,8 @@ canvas {
 
 /* Stile per il testo in alto a sinistra */
 .contact-info {
-    font-size: 6vmin;
-    line-height: 6vmin;
+    font-size: 2rem;
+    line-height: 2rem;
     color: #212121;
     margin-top: 2vw;
     margin-left: 2vw;
