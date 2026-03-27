@@ -244,21 +244,6 @@ const works = [
         0
     ),
     new Work(
-        "Lapse w/ frHans",
-        0,
-        "Onde Coerenti",
-        "13.03.2025",
-        "DJ Set",
-        "works_images/lapse.jpg",
-        [
-            { label: "Soundcloud", url: "https://soundcloud.com/luca-trapella-651200896/lapse-frhans-qmo?si=b4c76294f4d14262b886bb23a1911140&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" }
-        ],
-        "works_audio/lapse.mp3",
-        0,
-        "03:02",
-        0
-    ),
-    new Work(
         "Opening for: Olmo Amato - Deep Blue",
         "Bi-BOx Art Space, Biella",
         0,
@@ -281,7 +266,7 @@ const works = [
         "DJ Set",
         "works_images/es2.jpeg",
         [
-            { label: "Soundcloud", url: "https://soundcloud.com/luca-trapella-651200896/esplorazioni-sonore-2?si=b3ed1330cf5648b6af3022d9b751eb76&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" }
+            { label: "Soundcloud", url: "https://soundcloud.com/onde-coerenti/es-1?si=a4dcfe279d464069ae48b4df34dd9107&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" }
         ],
         "works_audio/es2.mp3",
         "A cave on the island of Porquerolles inspired this Exploration. The mix dives into the cavity and then resurfaces at sunset. Tracks are accompanied by field recordings from the island.",
