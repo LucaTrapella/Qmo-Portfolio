@@ -219,7 +219,7 @@ const works = [
         0,
         "6.05.2025",
         "serata",
-        "works_images/SAQON.jpeg",
+        "works_images/4thfloor.png",
         [
             { label: "More info here", url: "https://www.mixcloud.com/radiobandalarga/4th-floor-w-qmo-6th-may-2025/" }
         ],
