@@ -119,19 +119,7 @@ canvas {
     font-weight: 550; /* Aumenta lo spessore del font */
 
 }
-/* Colore specifico per ciascun link al passaggio del mouse */
-.contact-info a:nth-of-type(1):hover {
-    
-    color: #45124e; /* Colore per Instagram */
-}
 
-.contact-info a:nth-of-type(2):hover {
-    color: #802d14; /* Colore per SoundCloud */
-}
-
-.contact-info a:nth-of-type(3):hover {
-    color: #01354e; /* Colore per Bandcamp */
-}
 
 
 

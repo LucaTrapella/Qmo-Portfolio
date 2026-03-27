@@ -18,7 +18,7 @@ function startAnimation() {
   insertDistance = int(random(rand, rand + 2));
   //print("insertDistance:" + insertDistance)
   separationDistance = insertDistance * 2;
-  maxPoints = 1700;
+  maxPoints = 800;
 
   // Imposta il boundary in modo che sia uguale alla grandezza del canvas
   boundary = new Rect(0, 0, width, height);  // Adatta il boundary alle dimensioni del canvas
