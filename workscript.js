@@ -199,16 +199,16 @@ const works = [
         "A Year on Saqon Island",
         0,
         "Qmo",
-        "?.03.2026",
+        "29.03.2026",
         "DJ Set",
-        "works_images/SAQON.jpeg",
+        "works_images/SAQON_3000x3000.jpeg",
         [
-            { label: "Soundcloud", url: ""},
-            { label: "Bandcamp", url: ""}
+            { label: "Soundcloud", url: "https://soundcloud.com/qmo-383212272/sets/a-year-on-saqon-island"},
+            { label: "Bandcamp", url: "https://qmomusic.bandcamp.com/album/a-year-on-saqon-island"}
 
         ],
         0,
-        "??",
+        " EP built from environmental recordings collected across European islands, imagined as the four seasons of an imaginary one. After a long process of experimentation and discarded versions, the final tracks were selected for their spontaneity and intimacy. The compositions follow field recordings and an acousmatic approach, blending them with synthesized elements from electronic music.",
         0,
         0
     ),
