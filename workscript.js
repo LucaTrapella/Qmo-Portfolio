@@ -208,7 +208,7 @@ const works = [
 
         ],
         0,
-        " EP built from environmental recordings collected across European islands, imagined as the four seasons of an imaginary one. After a long process of experimentation and discarded versions, the final tracks were selected for their spontaneity and intimacy. The compositions follow field recordings and an acousmatic approach, blending them with synthesized elements from electronic music.",
+        "EP built from environmental recordings collected across European islands, imagined as the four seasons of an imaginary one. After a long process of experimentation and discarded versions, the final tracks were selected for their spontaneity and intimacy. The compositions follow field recordings and an acousmatic approach, blending them with synthesized and acoustic instruments in unconventional ways.",
         0,
         0
     ),
